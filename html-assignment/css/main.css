@@ -5,3 +5,11 @@ body {
     background-color: #fdfdfd;
     color: #333;
 }
+
+header, footer {
+    background-color: #ffd1dc; 
+}
+
+#site-title {
+    color: #333;
+}
