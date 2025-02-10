@@ -10,6 +10,6 @@ header, footer {
     background-color: #ffd1dc; 
 }
 
-#site-title {
+.site-title h1 {
     color: #333;
 }
