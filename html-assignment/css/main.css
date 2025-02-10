@@ -2,16 +2,27 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
+    line-height: 1.6;
     background-color: #fdfdfd;
     color: #333;
 }
 
 header, footer> p {
     background-color: #ffd1dc; 
+    padding: 10px 0;
+    text-align: center;
 }
 
-#site-title {
+.site-title {
     color: #333;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 4px solid #ffb6c1;
+}
+
+#site-title h1 {
+    margin: 0;
+    font-size: 2.5px;
 }
 
 #my-image {
