@@ -15,16 +15,12 @@ header, footer> p {
     margin-bottom: 30px;
 }
 
-#site-title h1 {
-    margin: 0;
-    text-align: center;
-}
-
 .site-title {
     color: #333;
     text-align: center;
     padding: 20px 0;
     border-bottom: 4px solid #ffb6c1;
+    margin: 0;
 }
 
 #my-image {
