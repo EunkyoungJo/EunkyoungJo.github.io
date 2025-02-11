@@ -7,10 +7,12 @@ body {
     color: #333;
 }
 
+
 header, footer> p {
     background-color: #ffd1dc; 
-    padding: 10px 0;
+    padding: 30px 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .site-title {
@@ -18,10 +20,6 @@ header, footer> p {
     text-align: center;
     padding: 20px 0;
     border-bottom: 4px solid #ffb6c1;
-}
-
-#site-title h1 {
-    margin: 0;
 }
 
 #my-image {
