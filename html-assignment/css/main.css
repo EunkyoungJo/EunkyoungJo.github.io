@@ -46,6 +46,7 @@ header, footer> p {
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 15px;
     padding: 0;
     margin: 0;
 
@@ -54,15 +55,17 @@ header, footer> p {
 .nav-link a {
     text-decoration: none;
     color: #333;
-    line-height: 3.0;
+    font-size: 1.2rem;
     background-color: #fffbcc;
-    border: 1px solid #ffd1dc;
-    padding: 10px 15px;
-    border-radius: 5px;
+    border: 2px solid #ffd1dc;
+    padding: 12px 20px;
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
+    font-display: inline-block;
 }
 
-.nav-link a:hover, nav-link a:focus {
+.nav-link a:hover {
     background-color: #c9f0d6;
     color: #333;
+    transform: scale(1.05);
 }
