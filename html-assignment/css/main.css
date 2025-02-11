@@ -17,6 +17,8 @@ header, footer> p {
 
 #site-title h1 {
     margin: 0;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .site-title {
