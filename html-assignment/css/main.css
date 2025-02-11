@@ -37,7 +37,7 @@ header, footer> p {
 
 .hobby-list {
     list-style-type: square;
-    padding: 0;
+    padding-left: 20px;
     margin: 0;
 }
 
