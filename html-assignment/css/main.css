@@ -42,10 +42,19 @@ header, footer> p {
     padding: 5px 0;
 }
 
+.nav-link {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+}
+
 .nav-link a {
     text-decoration: none;
     color: #333;
-    line-height: 2.0;
+    line-height: 3.0;
     background-color: #fffbcc;
     border: 1px solid #ffd1dc;
     padding: 10px 15px;
