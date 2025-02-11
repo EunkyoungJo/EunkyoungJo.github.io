@@ -71,5 +71,5 @@ header, footer> p {
 .nav-link a:hover, a:focus {
     background-color: #c9f0d6;
     color: #333;
-    transform: scale(1.05);
+    transform: scale(2.0);
 }
