@@ -36,9 +36,15 @@ header, footer> p {
 }
 
 .hobby-list {
+    display: block;
     list-style-type: square;
-    padding-left: 20px;
+    list-style-position: inside;
+    padding-left: 30px;
     margin: 0;
+}
+
+.hobby-list li {
+    display: list-item;
 }
 
 .hobby-list li:nth-child(odd) {
