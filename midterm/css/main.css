@@ -1,7 +1,8 @@
 /* font and background color*/
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightblue;
+    background-color: rgb(249, 221, 250);
     margin: 0;
     padding: 0;
 }
+
