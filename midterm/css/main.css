@@ -1,0 +1,7 @@
+/* font and background color*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
