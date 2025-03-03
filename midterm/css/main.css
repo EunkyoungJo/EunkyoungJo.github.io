@@ -114,3 +114,22 @@ nav ul li a {
  
 }
 
+/* fieldset and button style change */
+fieldset {
+    margin-top: 10px;
+    border: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(252, 238, 252);
+    cursor: pointer;
+}
+
+/* footer position and font size change */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
