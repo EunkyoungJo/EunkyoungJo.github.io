@@ -73,27 +73,30 @@
     <!--Contact Section-->
     <section class="contact">
         <h2>Contact to learn more</h2>
-        <form action="thanks.html" method="post">
-            <label for="name">Your Name</label>
-            <input id="name" type="text" name="name">
-
-            <label for="email">Your Email</label>
-            <input id="email" type="email" name="email">
-
-            <label for="mesage">Your Message</label>
-            <textarea id="message" name="message"></textarea>
-
-            <fieldset>
-                <legend>Would you like to visit my family?</legend>
-                <label for="yes">Yes</label>
-                <input id="yes" type="radio" name="visit" value="yes">
-                
-                <label for="no">No</label>
-                <input id="no" type="radio" name="visit" value="no">
-
-                <label for="maybe">Maybe</label>
-                <input id="maybe" type="radio" name="visit" value="maybe">
-            </fieldset>
+        <!--adding div to create box for contact-->
+        <div class="contact box">
+            <form action="thanks.html" method="post">
+                <label for="name">Your Name</label>
+                <input id="name" type="text" name="name">
+    
+                <label for="email">Your Email</label>
+                <input id="email" type="email" name="email">
+    
+                <label for="mesage">Your Message</label>
+                <textarea id="message" name="message"></textarea>
+    
+                <fieldset>
+                    <legend>Would you like to visit my family?</legend>
+                    <label for="yes">Yes</label>
+                    <input id="yes" type="radio" name="visit" value="yes">
+                    
+                    <label for="no">No</label>
+                    <input id="no" type="radio" name="visit" value="no">
+    
+                    <label for="maybe">Maybe</label>
+                    <input id="maybe" type="radio" name="visit" value="maybe">
+                </fieldset>
+            </div>        
 
             <button type="submit">SEND</button>
 
