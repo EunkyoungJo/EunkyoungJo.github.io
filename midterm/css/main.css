@@ -127,11 +127,15 @@ nav ul li a {
 fieldset {
     margin-top: 10px;
     border: none;
+    margin-left: -11px;
 }
 
-button {
+.contact button {
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
+    width: 50px;
+    text-align: left;
+    font-size: 10px;
     background-color: rgb(252, 238, 252);
     cursor: pointer;
 }
