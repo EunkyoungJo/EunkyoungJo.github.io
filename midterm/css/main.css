@@ -58,8 +58,10 @@ nav ul li a {
     padding-right: 15px;
     text-align: center;
 }
-/* delete last vertical line */
-nav ul li :last-child {
-    border-right: none;
+/* change content-image size */
+.content-image {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 10px;
 }
-
