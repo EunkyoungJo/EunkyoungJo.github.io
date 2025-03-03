@@ -1,7 +1,7 @@
 /* change font and background color */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 230, 255) ;
+    background-color: rgb(253, 225, 253) ;
     margin: 0 150px 0 150px;
     padding: 0;
 }
@@ -114,6 +114,14 @@ nav ul li a {
  
 }
 
+/* adding div for contact box */
+.contact div {
+    border: 1px solid black;
+    width: 100%;
+    margin-left: -20px;
+    padding: 20px;
+}
+
 /* fieldset and button style change */
 fieldset {
     margin-top: 10px;
@@ -129,7 +137,8 @@ button {
 
 /* footer position and font size change */
 footer {
-    text-align: center;
-    padding: 20px;
+    text-align: right;
+    padding: 10px;
     margin-top: 20px;
+    font-size: 12px;
 }
