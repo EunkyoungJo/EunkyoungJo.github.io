@@ -1,12 +1,18 @@
-/* font and background color*/
+/* change font and background color */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(250, 236, 250);
-    margin: 0;
+    background-color: rgb(250, 219, 250) ;
+    margin: 0 150px 0 150px;
     padding: 0;
 }
+/* adding wrapper by referring to week 7 class */
+.wrapper {
+    background-color: rgb(250, 232, 250);
+    width: auto;
+    margin: 0;
+}
 
-/* edit header image and title */
+/* edit header title and image size */
 header {
     position: relative;
     width: 100%;
@@ -29,11 +35,31 @@ header {
     font-size: 2.5rem;
 }
 
-/* edit navigation */
+/* edit navigation position and delete bullet point */
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;    
+    padding: 0;  
+}
+
+nav ul li {
+    margin: 10px 60px;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;   
+}
+/* change font color, size and adding vertical line */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border-right: 2px solid black;
+    padding-right: 15px;
+    text-align: center;
+}
+/* delete last vertical line */
+nav ul li :last-child {
+    border-right: none;
 }
 
