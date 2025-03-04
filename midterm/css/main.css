@@ -8,8 +8,10 @@ body {
 /* adding wrapper by referring to week 7 class */
 .wrapper {
     background-color: rgb(252, 238, 252);
-    width: auto;
-    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* edit header title and image size */
@@ -41,22 +43,28 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 0;  
+    margin: 0;
+    gap: 100px
 }
 
 nav ul li {
-    margin: 10px 60px;
+    margin: 0 30px;
     display: inline-block;
     position: relative;
-    font-weight: bold;   
 }
 /* change font color, size and adding vertical line */
 nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
-    border-right: 2px solid black;
-    padding-right: 15px;
+    padding: 10px 150px 0 60px;
+    display: inline-block;
+    border-right: 1px solid black;
     text-align: center;
+}
+
+nav ul li:last-child a {
+    border-right: none;
 }
 /* change content-image size */
 .content-image {
