@@ -124,12 +124,18 @@ nav ul li:last-child a {
 }
 
 /* adding div for contact box */
-.contact div {
+.box {
     border: 1px solid black;
-    width: 100%;
+    width: 99%;
     margin-left: -20px;
     padding: 20px;
     flex-direction: column;
+}
+
+.name, .email, .message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
 /* fieldset and button style change */
