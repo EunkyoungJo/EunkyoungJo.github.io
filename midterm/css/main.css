@@ -132,10 +132,18 @@ nav ul li:last-child a {
     flex-direction: column;
 }
 
+/* rearrange the items in the contact box */
 .name, .email, .message {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+}
+
+.contact textarea {
+    height: 100px;
+    padding: 8px;
+    border: 1px solid black;
+    resize: vertical;
 }
 
 /* fieldset and button style change */
