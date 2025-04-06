@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* specify font, line spacing, text color, background to the whole website */
+/* set font, line spacing, text color, background to the whole website */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -13,8 +13,28 @@ body {
     background-color: #fff;
 }
 
-/* common to all images for margin and width */
+/* image reset: full width and no extra space */
 img {
     max-width: 100%;
     display: block;
+}
+
+/* wrap content width a max width and center alignment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* style headings with bold text and spacing below */
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* style header background, spacing, and text color */
+header {
+    background-color: #222;
+    padding: 20px 0;
+    color: #fff; 
 }
