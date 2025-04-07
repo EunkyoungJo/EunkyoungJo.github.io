@@ -65,3 +65,19 @@ nav a {
     text-align: left;
     color: #fff;
 }
+
+/* make hero image full width */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* text box on top of hero image */
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+    max-width: 600px;
+}
