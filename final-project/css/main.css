@@ -65,12 +65,18 @@ nav ul {
     justify-content: center;
 }
 
-/* style for navigation links */
+/* add style for navigation links and hover effect */
 nav a {
     color: #c4a000;
     text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+nav a:hover {
+    background-color: #c4a000;
+    color: #000;
+}
 /* style for search form */
 .search-form {
     display: flex;
@@ -83,7 +89,7 @@ nav a {
 }
 
 .search-form input {
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
 }
 
