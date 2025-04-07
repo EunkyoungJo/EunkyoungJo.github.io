@@ -113,3 +113,13 @@ nav a {
     margin-top: 1rem;    
 }
 
+/* add vertical padding to all sections */
+section {
+    padding: 60px 0;
+}
+
+/* background color for key sections */
+.about-us, .services, .vision, .team, .contact {
+    background-color: #f8e6a0;
+} 
+
