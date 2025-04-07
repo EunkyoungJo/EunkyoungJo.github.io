@@ -132,3 +132,16 @@ section {
     padding: 20px;
     margin-bottom: 20px;
 }
+/* style for form layout and spacing */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* form input and textarea styles */
+input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
