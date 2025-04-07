@@ -33,6 +33,14 @@ h1, h2, h3 {
 }
 
 /* style header background, spacing, and text color */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 header {
     background-color: #222;
     padding: 20px 0;
@@ -42,21 +50,48 @@ header {
 /* adjust logo hetght inside header */
 .logo {
     height: 60px;
+    flex-shrink: 0;
 }
 
 /* horizontal navigation menu with spacing */
+nav {
+    flex: 1;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 /* style for navigation links */
 nav a {
     color: #c4a000;
     text-decoration: none;
-    font-weight: bold;
+}
+
+/* style for search form */
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c4a000;
+    background-color: #fff;
+    height: 36px;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.search-form input {
+    padding: 5px 10px;
+    border: none;
+}
+
+.search-form button {
+    background-color: transparent;
+    border: 1px solid #c4a000;
+    padding: 5px 10px;
+    color: #c4a000
 }
 
 /* hero section with full-width image and overlay text */
@@ -145,3 +180,4 @@ input, textarea {
     font-size: 1rem;
     border: 1px solid #ccc;
 }
+
