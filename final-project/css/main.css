@@ -33,36 +33,32 @@ h1, h2, h3 {
 }
 
 /* style header background, spacing, and text color */
-.header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
 header {
     background-color: #222;
     padding: 20px 0;
     color: #fff; 
 }
 
-/* adjust logo hetght inside header */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* adjust logo height inside header */
 .logo {
     height: 60px;
-    flex-shrink: 0;
 }
 
 /* horizontal navigation menu with spacing */
-nav {
-    flex: 1;
-}
-
 nav ul {
     list-style: none;
     display: flex;
     gap: 30px;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 /* add style for navigation links and hover effect */
@@ -70,7 +66,6 @@ nav a {
     color: #c4a000;
     text-decoration: none;
     padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
@@ -84,13 +79,13 @@ nav a:hover {
     border: 1px solid #c4a000;
     background-color: #fff;
     height: 36px;
-    width: 200px;
-    flex-shrink: 0;
 }
 
 .search-form input {
     padding: 10px 20px;
     border: none;
+    width: 150px;
+    outline: none;
 }
 
 .search-form button {
@@ -103,34 +98,54 @@ nav a:hover {
 /* hero section with full-width image and overlay text */
 .hero {
     position: relative;
-    text-align: left;
+    text-align: start;
     color: #fff;
 }
 
 /* make hero image full width */
 .hero img {
     width: 100%;
-    height: auto;
+    height: 40rem;
+    object-fit: cover;
 }
 
 /* text box on top of hero image */
 .hero-text {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 15%;
+    left: 5%;
     background-color: rgba(0,0,0,0.5);
-    padding: 2rem;
-    max-width: 600px;
+    padding: 3%;
+    padding-left: 1rem;
+    max-width: 90%;
+}
+
+.hero-text h1{
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.hero-text p {
+    line-height: 1.4;
+}
+
+.hero-text a {
+    font-size: 1.3rem;
 }
 
 /* yellow background for hero button */
 .hero .button {
     background-color: #c4a000;
     color: #000;
-    padding: 10px 20px;
+    padding: 30px 40px;
     text-decoration: none;
     display: inline-block;
     margin-top: 1rem;
+}
+
+.button i {
+    margin-left: 10px;
 }
 
 /* transparent background and yellow border for vision button */
