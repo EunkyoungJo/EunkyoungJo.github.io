@@ -38,3 +38,16 @@ header {
     padding: 20px 0;
     color: #fff; 
 }
+
+/* adjust logo hetght inside header */
+.logo {
+    height: 60px;
+}
+
+/* horizontal navigation menu with spacing */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
