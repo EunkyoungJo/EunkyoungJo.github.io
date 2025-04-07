@@ -119,7 +119,16 @@ section {
 }
 
 /* background color for key sections */
-.about-us, .services, .vision, .team, .contact {
+.about-us {
     background-color: #f8e6a0;
+}
+.services, .vision, .team, .contact {
+    background-color: #fff;
 } 
 
+/* yellow background and padding for service and team cards */
+.services .service-card, .team-member {
+    background-color: #f8e6a0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
