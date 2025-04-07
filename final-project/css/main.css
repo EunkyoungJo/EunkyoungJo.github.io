@@ -93,6 +93,7 @@ nav a:hover {
     border: 1px solid #c4a000;
     padding: 5px 10px;
     color: #c4a000
+    
 }
 
 /* hero section with full-width image and overlay text */
@@ -120,6 +121,7 @@ nav a:hover {
     max-width: 90%;
 }
 
+/* hero font size and line-height change */
 .hero-text h1{
     font-size: 6rem;
     font-weight: bold;
@@ -200,5 +202,19 @@ input, textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
+}
+
+/* table styling for hours of operation */
+.hours th, .hours td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* style for table headers and cells */
+.hours th, .hours td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
 
