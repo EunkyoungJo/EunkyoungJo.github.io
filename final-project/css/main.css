@@ -82,18 +82,23 @@ nav a:hover {
 }
 
 .search-form input {
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
-    width: 150px;
+    height: 100%;
     outline: none;
+    font-size: 1rem;
+    flex-grow: 1;
 }
 
 .search-form button {
     background-color: transparent;
     border: 1px solid #c4a000;
-    padding: 5px 10px;
-    color: #c4a000
-    
+    padding: 10px 10px;
+    color: #c4a000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;    
 }
 
 /* hero section with full-width image and overlay text */
