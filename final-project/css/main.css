@@ -229,16 +229,27 @@ form .button {
     border: 1px solid #4d4c4c3c;
     padding: 20px;
     text-align: left;
-    font-weight: lighter;    
+    font-weight: lighter; 
+    width: 50%;   
 }
 
 /* style for table headers and cells */
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
 .hours th, .hours td {
     border: 1px solid #4d4c4c3c;
     padding: 10px;
     text-align: left;
 }
 
+.hours th {
+    text-align: center;
+    background-color: #f8e6a0;
+}
 /* set map iframe size and border */
 .map iframe {
     width: 100%;
