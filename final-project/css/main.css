@@ -198,22 +198,43 @@ form {
 }
 
 /* form input and textarea styles */
-input, textarea {
+input {
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #4d4c4c3c;
+}
+textarea {
+    padding: 30px;
+    font-size: 1rem;
+    border: 1px solid #4d4c4c3c;
+}
+
+/* style for send button inside form */
+form .button {
+    background-color: #000;
+    color: #de8b05;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* table styling for hours of operation */
 .hours th, .hours td {
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 1px solid #4d4c4c3c;
+    padding: 20px;
     text-align: left;
+    font-weight: lighter;    
 }
 
 /* style for table headers and cells */
 .hours th, .hours td {
-    border: 1px solid #ccc;
+    border: 1px solid #4d4c4c3c;
     padding: 10px;
     text-align: left;
 }
@@ -223,5 +244,20 @@ input, textarea {
     width: 100%;
     height: 300px;
     border: 0;
+}
+
+/* footer at the bottom with dark background and yellow text */ 
+footer {
+    background-color: #222;
+    color: #de8b05;
+    padding: 20px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+/* underline footer links in yellow */
+footer a {
+    color: #de8b05;
+    text-decoration: underline;
 }
 
