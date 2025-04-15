@@ -322,12 +322,26 @@ footer a {
     /* modifying service-card location for Our services */
     .services .container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
-        gap: 30px;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }     
+     .services .service-card:nth-child(2) {
+        grid-column: span 3;
+        margin-bottom: 0;
+    }
+    .services .service-card:nth-child(3) { 
+        grid-column: span 3;
+        margin-bottom: 0;
+    }
+    .services .service-card:nth-child(4) {
+        grid-column: span 2;
+    }
+    .services .service-card:nth-child(5) {
+        grid-column: span 2;
+    }
+    .services .service-card:nth-child(6) {
+        grid-column: span 2;
     } 
-    
-   
 }
 
 
