@@ -57,6 +57,7 @@ nav ul {
     display: flex;
     gap: 30px;
     justify-content: center;
+    font-size: 18px;
     padding: 0;
     margin: 0;
 }
@@ -65,12 +66,13 @@ nav ul {
 nav a {
     color: #c4a000;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 15px;
 }
 
 nav a:hover {
     background-color: #c4a000;
     color: #000;
+    padding: 15px 25px;
 }
 /* style for search form */
 .search-form {
@@ -111,30 +113,31 @@ nav a:hover {
 /* make hero image full width */
 .hero img {
     width: 100%;
-    height: 40rem;
+    height: 56rem;
     object-fit: cover;
 }
 
 /* text box on top of hero image */
 .hero-text {
     position: absolute;
-    top: 15%;
-    left: 5%;
+    top: 12%;
+    left: 7%;
     background-color: rgba(0,0,0,0.5);
     padding: 3%;
     padding-left: 1rem;
-    max-width: 90%;
+    max-width: 85%;
 }
 
 /* hero font size and line-height change */
 .hero-text h1{
-    font-size: 6rem;
+    font-size: 9rem;
     font-weight: bold;
     line-height: 1.4;
 }
 
 .hero-text p {
     line-height: 1.4;
+    font-size: 1.5rem;
 }
 
 .hero-text a {
@@ -176,14 +179,10 @@ nav a:hover {
     margin-top: 1rem;    
 }
 
-/* add vertical padding to all sections */
-section {
-    padding: 60px 0;
-}
-
 /* background color for key sections */
 .about-us {
     background-color: #f8e6a0;
+    padding: 20px 0;
 }
 .services, .vision, .team, .contact {
     background-color: #fff;
@@ -285,20 +284,26 @@ footer a {
         align-items: center;
         gap: 40px;
     }
+    /* h2 font size and interval adjustment */
+    .about-us h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
     /* image takes up about half width and place on the left */
     .about-us img {
-        width: 600px;
-        height: 400px;
-
+        width: 50%;
+        height: auto;
+        object-fit: cover;
     }
 
     /* move the heading and both paragraphs to the right */
-    .about-us h2,
-    .about-us p {
-        display: flex;
-        flex-direction: column;
+    .about-us .about-text {
         width: 100%;
-        height: 60% ;
+    }
+
+    .about-us p {
+        margin-bottom: 1rem;
     }
 
     .services .container{
