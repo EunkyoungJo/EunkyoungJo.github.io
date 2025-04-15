@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
 /* set font, line spacing, text color, background to the whole website */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -292,7 +300,7 @@ footer a {
 
     /* image takes up about half width and place on the left */
     .about-us img {
-        width: 50%;
+        width: 60%;
         height: auto;
         object-fit: cover;
     }
@@ -300,10 +308,13 @@ footer a {
     /* move the heading and both paragraphs to the right */
     .about-us .about-text {
         width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .about-us p {
         margin-bottom: 1rem;
+        max-width: 600px;
     }
 
     .services .container{
