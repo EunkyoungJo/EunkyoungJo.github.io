@@ -16,12 +16,13 @@ body {
 /* image reset: full width and no extra space */
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
 /* wrap content width a max width and center alignment */
 .container {
-    max-width: 2500px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
     height: auto;
@@ -44,23 +45,25 @@ header .header-inner {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    max-width: 3000px;
+    max-width: 1400px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 /* adjust logo height inside header */
 .logo {
-    height: 170px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
 }
 
 /* horizontal navigation menu with spacing */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 150px;
+    gap: 70px;
     justify-content: center;
-    font-size: 35px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
 }
@@ -75,7 +78,7 @@ nav a {
 nav a:hover {
     background-color: #c4a000;
     color: #000;
-    padding: 25px 40px;
+    padding: 15px 30px;
 }
 /* style for search form */
 .search-form {
@@ -84,7 +87,8 @@ nav a:hover {
     align-items: center;
     border: 1px solid #c4a000;
     background-color: #fff;
-    height: 50px;
+    width: 300px;
+    height: 30px;
 }
 
 .search-form input {
@@ -92,14 +96,14 @@ nav a:hover {
     border: none;
     height: 100%;
     outline: none;
-    font-size: 2rem;
+    font-size: 1rem;
 
 }
 
 .search-form button {
     background-color: #222;
     border: 1px solid #c4a000;
-    padding: 20px 20px;
+    padding: 10px 10px;
     color: #c4a000;
     height: 100%;
     margin-left: auto;
@@ -108,7 +112,7 @@ nav a:hover {
 }
 
 .search-form button i {
-    font-size: 1.8rem;
+    font-size: 1rem;
     line-height: 0.3;
 }
 
@@ -122,35 +126,37 @@ nav a:hover {
 /* make hero image full width */
 .hero img {
     width: 100%;
-    height: 85rem;
+    height: 44rem;
     object-fit: cover;
 }
 
 /* text box on top of hero image */
 .hero-text {
     position: absolute;
-    top: 12%;
-    left: 7%;
+    top: 8%;
+    left: 6%;
     background-color: rgba(0,0,0,0.5);
-    padding: 3%;
+    padding: 1%;
     padding-left: 1rem;
-    max-width: 85%;
+    max-width: 87%;
 }
 
 /* hero font size and line-height change */
 .hero-text h1{
-    font-size: 13rem;
+    font-size: 8rem;
     font-weight: bold;
     line-height: 1.4;
 }
 
 .hero-text p {
     line-height: 1.4;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .hero-text a {
-    font-size: 3rem;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 /* yellow background for hero button */
@@ -182,6 +188,9 @@ nav a:hover {
     text-decoration: none;
     display: inline-block;
     margin-top: 1rem;    
+}
+.button i {
+    margin-left: 12px;
 }
 
 /* background color for key sections */
@@ -292,21 +301,21 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center; 
-        gap: 40px;       
-        padding: 30px;
+        gap: 30px;       
+        padding: 10px;
         margin: 0 auto;
-        max-width: 3000px;
+        max-width: 1300px;
     }
     /* h2 font size and interval adjustment */
     .about-us h2 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
     }
 
     /* image takes up about half width and place on the left */
     .about-us img {
         width: 100%;
-        height: auto;
+        height: 400px;
         object-fit: cover;
     }
 
@@ -318,7 +327,7 @@ footer a {
 
     .about-us p {
         margin-bottom: 1rem;
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
     
     /* modifying h2 interval and font for Our services */
@@ -327,7 +336,7 @@ footer a {
         grid-column: 1 / -1;
         margin-bottom: 0;
         margin-top: 3rem;
-        font-size: 3.5rem;
+        font-size: 3rem;
     } 
   
     /* modifying service-card location for Our services */
@@ -353,6 +362,34 @@ footer a {
     .services .service-card:nth-child(6) {
         grid-column: span 2;
     } 
+
+    /* change h3 and para font-size */
+    .services .service-card h3 {
+        font-size: 2rem;
+    }
+    .services .service-card p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    /* resize img and buttons */
+        .service-card img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover; 
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .service-card .button {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: auto;
+        font-size: 1.5rem;
+        padding: 25px;
+    }
 }
 
 
