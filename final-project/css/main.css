@@ -35,29 +35,31 @@ h1, h2, h3 {
 /* style header background, spacing, and text color */
 header {
     background-color: #222;
-    padding: 20px 0;
+    padding: 50px 0;
     color: #fff; 
 }
 
-header .container {
+header .header-inner {
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    max-width: 3000px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 /* adjust logo height inside header */
 .logo {
-    height: 60px;
+    height: 170px;
 }
 
 /* horizontal navigation menu with spacing */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 150px;
     justify-content: center;
-    font-size: 18px;
+    font-size: 35px;
     padding: 0;
     margin: 0;
 }
@@ -72,15 +74,16 @@ nav a {
 nav a:hover {
     background-color: #c4a000;
     color: #000;
-    padding: 15px 25px;
+    padding: 25px 40px;
 }
 /* style for search form */
 .search-form {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border: 1px solid #c4a000;
     background-color: #fff;
-    height: 36px;
+    height: 50px;
 }
 
 .search-form input {
@@ -88,21 +91,24 @@ nav a:hover {
     border: none;
     height: 100%;
     outline: none;
-    font-size: 1rem;
+    font-size: 2rem;
 
 }
 
 .search-form button {
-    background-color: transparent;
+    background-color: #222;
     border: 1px solid #c4a000;
-    padding: 10px 10px;
+    padding: 20px 20px;
     color: #c4a000;
     height: 100%;
-    display: flex; 
-    flex-flow: row;
     margin-left: auto;
     align-items: end;
     cursor: pointer;    
+}
+
+.search-form button i {
+    font-size: 1.8rem;
+    line-height: 0.3;
 }
 
 /* hero section with full-width image and overlay text */
