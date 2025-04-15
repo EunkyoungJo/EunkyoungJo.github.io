@@ -84,12 +84,12 @@ nav a:hover {
 }
 
 .search-form input {
-    padding: 10px 10px;
+    padding: 6px;
     border: none;
     height: 100%;
     outline: none;
     font-size: 1rem;
-    flex-grow: 1;
+
 }
 
 .search-form button {
@@ -98,8 +98,10 @@ nav a:hover {
     padding: 10px 10px;
     color: #c4a000;
     height: 100%;
-    display: flex;
-    align-items: center;
+    display: flex; 
+    flex-flow: row;
+    margin-left: auto;
+    align-items: end;
     cursor: pointer;    
 }
 
@@ -154,10 +156,6 @@ nav a:hover {
     margin-top: 1rem;
 }
 
-.button i {
-    margin-left: 10px;
-}
-
 /* transparent background and yellow border for vision button */
 .vision .button {
     background-color: rgba(0,0,0,0.7);
@@ -182,7 +180,7 @@ nav a:hover {
 /* background color for key sections */
 .about-us {
     background-color: #f8e6a0;
-    padding: 20px 0;
+    padding: 20px 10px 20px 10px;
 }
 .services, .vision, .team, .contact {
     background-color: #fff;
@@ -280,9 +278,13 @@ footer a {
 @media (min-width: 768px) {
     /* flex layout for about-us section on wider screens */
     .about-us .container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 60% 40%;
         align-items: center;
         gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
     }
     /* h2 font size and interval adjustment */
     .about-us h2 {
@@ -292,8 +294,9 @@ footer a {
 
     /* image takes up about half width and place on the left */
     .about-us img {
-        width: 60%;
+        width: 100%;
         height: auto;
+        display: block;
         object-fit: cover;
     }
 
@@ -301,24 +304,30 @@ footer a {
     .about-us .about-text {
         width: 100%;
         height: auto;
-        object-fit: cover;
     }
 
     .about-us p {
         margin-bottom: 1rem;
-        max-width: 600px;
     }
-
-    .services .container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-    }    
+    
+    /* modifying h2 interval and font for Our services */
+     
     .services h2 {
         grid-column: 1 / -1;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
+        margin-top: 3rem;
+        font-size: 2.5rem;
     } 
   
+    /* modifying service-card location for Our services */
+    .services .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 30px;
+    } 
+    
+   
 }
 
 
