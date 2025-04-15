@@ -390,6 +390,44 @@ footer a {
         font-size: 1.5rem;
         padding: 25px;
     }
+
+    /* set relative positioning, full width, and hide overflow for Vision section */
+    .vision {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* full width for background image */
+    .vision img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        display: block;
+    }
+    .vision-text {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        color: #fff;
+        max-width: 1300px;
+    }
+
+    /* change heading and para font-size */
+    .vision-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .vision-text p{
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* change font-size and padding for vision button */
+    .vision .button {
+        font-size: 1.4rem;
+        padding: 30px 50px
+    }
 }
 
 
