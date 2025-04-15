@@ -277,27 +277,28 @@ footer a {
 /* responsive layout for tablets & desktop */
 @media (min-width: 768px) {
     /* flex layout for about-us section on wider screens */
-    .about-us .container {
+    .about-us {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
-        gap: 40px;
-        max-width: 1200px;
+        background-color: #f8e6a0;
+        padding: 60px;
         margin: 0 auto;
-        padding: 0 40px;
     }
     /* h2 font size and interval adjustment */
     .about-us h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
+
     }
 
     /* image takes up about half width and place on the left */
     .about-us img {
-        width: 100%;
+        width: 80%;
+        align-items: center;
         height: auto;
-        display: block;
         object-fit: cover;
+        margin-right: 0;
     }
 
     /* move the heading and both paragraphs to the right */
@@ -308,6 +309,7 @@ footer a {
 
     .about-us p {
         margin-bottom: 1rem;
+        font-size: 1.5rem;
     }
     
     /* modifying h2 interval and font for Our services */
@@ -316,7 +318,7 @@ footer a {
         grid-column: 1 / -1;
         margin-bottom: 0;
         margin-top: 3rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
     } 
   
     /* modifying service-card location for Our services */
@@ -343,6 +345,7 @@ footer a {
         grid-column: span 2;
     } 
 }
+
 
 
 
