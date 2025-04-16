@@ -487,45 +487,62 @@ footer a {
         line-height: 1.6;
     }
 
-    /* grid column for contact section */
+    /* Contact section container with 2-column grid */
     .contact .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "form map"
-            "hours map";
         gap: 40px;
         max-width: 1300px;
         margin: 0 auto;
-        padding: 40px;
+        padding: 0 40px 40px;
+        align-items: start;
     }
 
-    form {
-        grid-area: form;
+    /* h2 stays outside .container, just styled for spacing */
+    .contact h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    /* Message section on the left */
+    .message {
+        grid-column: 1;
+        min-width: 0;
+    }
+
+    .message h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    } 
+
+    /* Map section on the right */
+    .contact .container > map {
+        min-width: 0;
     }
     .map {
-        grid-area: map;
+        grid-column: 2;
+        align-self: start;
+        min-width: 0;
     }
-    .hours {
-        grid-area: hours;
-        grid-column: span 2;
+    .map h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
     }
-
-    /* fixing table style */
-    .hours table {
+    .map iframe {
         width: 100%;
-        border-collapse: collapse;
-        font-size: 1rem;
-    }
-  
-    /* adjust input and textarea */
-    input, textarea {
-        padding: 10px;
-        font-size: 1rem;
-        border: 1px solid #ccc;
+        height: 450px;
+        border: 0;
+        display: block;
     }
 
-    /* make style form button */
+    /* Form styling */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+   
     form .button {
         background-color: #000;
         color: #de8b05;
@@ -534,12 +551,27 @@ footer a {
         font-size: 1.1rem;
         width: 150px;
         cursor: pointer;
-        margin-top: 10px
+        margin-top: 10px;
     }
 
-    /*  */
-
+    /* Hours section spans both columns */
+    .hours {
+        grid-column: 1 / span 2; 
+    }
+    .hours h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    .hours table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1rem;
+        margin-top: 0;
+    }
 }
+
+
+
 
 
 
