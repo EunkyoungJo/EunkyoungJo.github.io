@@ -584,7 +584,8 @@ footer a {
 
   /* Logo size adjustment */
   .logo {
-    height: 80px;
+    height: 100px;
+    width: 100%;
   }
 
   /* Navigation: reduce gap and add spacing */
