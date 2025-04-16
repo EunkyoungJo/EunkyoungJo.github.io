@@ -37,7 +37,7 @@ h1, h2, h3 {
 /* style header background, spacing, and text color */
 header {
     background-color: #222;
-    padding: 50px 0;
+    padding: 20px 0;
     color: #fff; 
 }
 
@@ -431,36 +431,56 @@ footer a {
     
     /* place team members diagonally in two colums */
     .team .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        align-items: start;
-        padding: 60px 20px;
+        padding: 0;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    /* change font-size for team h2 */
+    .team h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
     /* style for each team member card */
     .team-member {
-        background-color: #f8e6a0;
-        padding: 20px;
         display: flex;
-        flex-direction: column;
-        justify-content: start;
+        background-color: #f8e6a0;
+        padding: 0;
+        margin-bottom: 0;
+        align-items: center;
+        width: 100%;
     }
 
-    /* make team member images fill the width and maintain aspect ratio */
+    /* reverse row for Bob */
+    .team-member.reverse {
+        flex-direction: row-reverse;
+    }
+
+    /* make team member images proper size  */
     .team-member img {
-        width: 100%;
+        width: 50%;
         height: 300px;
         object-fit: cover;
-        margin-bottom: 1rem;
+        display: block;
     }
-    /* change font-size for team member */
+    /* change font-size for team-info */
+    .team-info {
+        width: 50%;
+        padding: 30px;
+    }
     .team-member h3 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem 0 0.2rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .team-info p{
+        font-size: 1rem;
+        line-height: 1.6;
     }
     .team-member p:first-of-type {
         font-weight: bold;
         margin-bottom: 0.5rem;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #de8b05;
     }
     .team-member p:last-of-type {
         font-size: 1rem;
