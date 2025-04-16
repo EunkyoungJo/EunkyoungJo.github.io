@@ -508,6 +508,7 @@ footer a {
     }
     .hours {
         grid-area: hours;
+        grid-column: span 2;
     }
 
     /* fixing table style */
@@ -516,7 +517,7 @@ footer a {
         border-collapse: collapse;
         font-size: 1rem;
     }
-
+  
     /* adjust input and textarea */
     input, textarea {
         padding: 10px;
