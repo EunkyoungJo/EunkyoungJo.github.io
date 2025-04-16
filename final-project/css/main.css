@@ -486,6 +486,58 @@ footer a {
         font-size: 1rem;
         line-height: 1.6;
     }
+
+    /* grid column for contact section */
+    .contact .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "form map"
+            "hours map";
+        gap: 40px;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    form {
+        grid-area: form;
+    }
+    .map {
+        grid-area: map;
+    }
+    .hours {
+        grid-area: hours;
+    }
+
+    /* fixing table style */
+    .hours table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1rem;
+    }
+
+    /* adjust input and textarea */
+    input, textarea {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+    }
+
+    /* make style form button */
+    form .button {
+        background-color: #000;
+        color: #de8b05;
+        padding: 15px 20px;
+        border: none;
+        font-size: 1.1rem;
+        width: 150px;
+        cursor: pointer;
+        margin-top: 10px
+    }
+
+    /*  */
+
 }
 
 
